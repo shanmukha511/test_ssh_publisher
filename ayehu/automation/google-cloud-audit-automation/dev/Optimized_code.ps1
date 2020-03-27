@@ -295,7 +295,7 @@ Write-Verbose "Looking for $server"
 
 
 
-$results | Out-GridView
+#$results | Out-GridView
 
 $updatetxtpath = $updatepath + "\" + "updated_DEV-nonproduction.txt" 
 $updatecsvpath = $updatepath + "\" + "DEV Non Production Updated.csv"  
