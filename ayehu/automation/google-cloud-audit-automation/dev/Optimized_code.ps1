@@ -6,9 +6,9 @@ import-module -name $name -DisableNameChecking  -Force
 
 $DesktopPath = "Gcloud_Inventory_Files"
 
-$OldPath = /tmp +"old_Inventory_Files"
-$NewPath = /tmp +"new_Inventory_Files"
-$UpdatePath =/tmp +"update_Inventory_Files"
+$OldPath = "/tmp" +"old_Inventory_Files"
+$NewPath = "/tmp" +"new_Inventory_Files"
+$UpdatePath = "/tmp" +"update_Inventory_Files"
 
 if(!(test-path $DesktopPath))
 {
