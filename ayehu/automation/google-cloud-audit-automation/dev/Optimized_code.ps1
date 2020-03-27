@@ -4,11 +4,11 @@ $name = $ENV:WORKSPACE + "\ayehu\automation\google-cloud-audit-automation\dev\Gc
 
 import-module -name $name -DisableNameChecking  -Force
 
-$DesktopPath = [Environment]::GetFolderPath("Desktop")+"\"+"Gcloud_Inventory_Files"
+$DesktopPath = "Gcloud_Inventory_Files"
 
-$OldPath = [Environment]::GetFolderPath("Desktop")+"\"+"old_Inventory_Files"
-$NewPath = [Environment]::GetFolderPath("Desktop")+"\"+"new_Inventory_Files"
-$UpdatePath = [Environment]::GetFolderPath("Desktop")+"\"+"update_Inventory_Files"
+$OldPath = /tmp +"old_Inventory_Files"
+$NewPath = /tmp +"new_Inventory_Files"
+$UpdatePath =/tmp +"update_Inventory_Files"
 
 if(!(test-path $DesktopPath))
 {
