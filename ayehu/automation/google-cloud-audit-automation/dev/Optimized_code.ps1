@@ -1,6 +1,6 @@
 #code to check directory exists or not,if not create one
 
-$name = "\ayehu\automation\google-cloud-audit-automation\dev\Gcloud_Inventory_Module.ps1"
+$name = "\tmp\yogi\ayehu\automation\google-cloud-audit-automation\dev\Gcloud_Inventory_Module.ps1"
 
 import-module -name $name -DisableNameChecking  -Force
 
