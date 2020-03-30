@@ -92,7 +92,8 @@ $data = Get-Instances-Data
 
 $data = $data |Select-Object -SkipLast 1
 
-$path2 = $ENV:WORKSPACE + "\ayehu\automation\google-cloud-audit-automation\dev\DEV Non Production.csv"
+#$path2 = $ENV:WORKSPACE + "\ayehu\automation\google-cloud-audit-automation\dev\DEV Non Production.csv"
+$path2 = "/tmp/yogi/ayehu/automation/google-cloud-audit-automation/dev/DEV Non Production.csv"
 
 
 
@@ -303,7 +304,8 @@ $updatecsvpath = $updatepath + "\" + "DEV Non Production Updated.csv"
 
 
 
-$path = $ENV:WORKSPACE + "\ayehu\automation\google-cloud-audit-automation\dev\DEV Non Production Updated.csv"
+#$path = $ENV:WORKSPACE + "\ayehu\automation\google-cloud-audit-automation\dev\DEV Non Production Updated.csv"
+$path = "/tmp/yogi/ayehu/automation/google-cloud-audit-automation/dev/DEV Non Production.csv/DEV Non Production Updated.csv"
 
 $results | Export-Csv -Path $path  -NoTypeInformation
 
