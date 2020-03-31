@@ -319,8 +319,9 @@ else
 write-host "Reference file doesnt exist for comparison"
 
 }
-#gsutil cp test123.txt gs://test511
+gsutil cp /tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production.csv gs://test511
+gsutil cp /tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production_Updated.csv gs://test511
 
-#rm -rf /tmp/shan/ayehu/
+rm -rf /tmp/shan/ayehu/
 
 Stop-Transcript
