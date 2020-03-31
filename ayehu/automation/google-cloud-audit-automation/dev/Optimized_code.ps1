@@ -1,14 +1,21 @@
 #code to check directory exists or not,if not create one
 
-$name = "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/Gcloud_Inventory_Module.ps1"
+#$name = "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/Gcloud_Inventory_Module.ps1"
 
+$name = "/root/ayehu/automation/google-cloud-audit-automation/dev/Gcloud_Inventory_Module.ps1"
 import-module -name $name -DisableNameChecking  -Force
 
+<#
 $DesktopPath = "/tmp/"+"Gcloud_Inventory_Files"
-
 $OldPath = "/tmp/" +"old_Inventory_Files"
 $NewPath = "/tmp/" +"new_Inventory_Files"
 $UpdatePath = "/tmp/" +"update_Inventory_Files"
+#>
+
+$DesktopPath = "/root/"+"Gcloud_Inventory_Files"
+$OldPath = "/root/" +"old_Inventory_Files"
+$NewPath = "/root/" +"new_Inventory_Files"
+$UpdatePath = "/root/" +"update_Inventory_Files"
 
 if(!(test-path $DesktopPath))
 {
@@ -98,7 +105,10 @@ $data = Get-Instances-Data
 $data = $data |Select-Object -SkipLast 1
 
 #$path2 = $ENV:WORKSPACE + "\ayehu\automation\google-cloud-audit-automation\dev\DEV Non Production.csv"
-$path2 = "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production.csv"
+
+#$path2 = "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production.csv"
+
+$path2 = "/root/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production.csv"
 
 
 
@@ -310,7 +320,7 @@ $updatecsvpath = $updatepath + "\" + "DEV_Non_Production_Updated.csv"
 
 
 #$path = $ENV:WORKSPACE + "\ayehu\automation\google-cloud-audit-automation\dev\DEV Non Production Updated.csv"
-$path = "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production_Updated.csv"
+$path = "/root/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production_Updated.csv"
 
 $results | Export-Csv -Path $path  -NoTypeInformation
 
@@ -324,14 +334,14 @@ else
 write-host "Reference file doesnt exist for comparison"
 
 }
-if (test-path "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production.csv")
+if (test-path "/root/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production.csv")
 {
 gsutil cp /tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production.csv gs://test511
 }
-if (test-path "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production_Updated.csv")
+if (test-path "/root/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production_Updated.csv")
 {
-gsutil cp /tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production_Updated.csv gs://test511
+gsutil cp /root/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production_Updated.csv gs://test511
 }
-rm -rf /tmp/shan/ayehu/
+rm -rf /root/ayehu/
 
 Stop-Transcript
