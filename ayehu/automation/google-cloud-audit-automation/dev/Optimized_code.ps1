@@ -51,8 +51,8 @@ else
  echo "Directory already exists"
 }
 
-$Newfilepath = $NewPath + "/" +"DEV Non Production.csv"
-$oldfilepath = $OldPath + "/" +"DEV Non Production.csv"
+$Newfilepath = $NewPath + "/" +"DEV_Non_Production.csv"
+$oldfilepath = $OldPath + "/" +"DEV_Non_Production.csv"
 
 
 <#
@@ -304,7 +304,7 @@ Write-Verbose "Looking for $server"
 #$results | Out-GridView
 
 $updatetxtpath = $updatepath + "\" + "updated_DEV-nonproduction.txt" 
-$updatecsvpath = $updatepath + "\" + "DEV Non Production Updated.csv"  
+$updatecsvpath = $updatepath + "\" + "DEV_Non_Production_Updated.csv"  
 
 
 
