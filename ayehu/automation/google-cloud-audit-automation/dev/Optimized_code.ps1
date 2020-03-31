@@ -342,6 +342,6 @@ if (test-path "/root/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_
 {
 gsutil cp /root/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production_Updated.csv gs://test511
 }
-#rm -rf /root/ayehu/
+rm -rf /root/ayehu/
 
 Stop-Transcript
