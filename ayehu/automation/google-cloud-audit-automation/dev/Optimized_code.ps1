@@ -319,5 +319,5 @@ else
 write-host "Reference file doesnt exist for comparison"
 
 }
-
+rm -r -f ayehu
 Stop-Transcript
