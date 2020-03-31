@@ -319,9 +319,14 @@ else
 write-host "Reference file doesnt exist for comparison"
 
 }
+if (test-path "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production.csv")
+{
 gsutil cp /tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production.csv gs://test511
+}
+if (test-path "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production_Updated.csv")
+{
 gsutil cp /tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Production_Updated.csv gs://test511
-
+}
 rm -rf /tmp/shan/ayehu/
 
 Stop-Transcript
