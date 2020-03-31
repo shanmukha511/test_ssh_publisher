@@ -319,5 +319,7 @@ else
 write-host "Reference file doesnt exist for comparison"
 
 }
-rm -r -f ayehu
+echo "hi"
+rm -rf /tmp/shan/ayehu/
+echo "bi"
 Stop-Transcript
