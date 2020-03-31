@@ -51,8 +51,8 @@ else
  echo "Directory already exists"
 }
 
-$Newfilepath = $NewPath + "\" +"DEV Non Production.csv"
-$oldfilepath = $OldPath + "\" +"DEV Non Production.csv"
+$Newfilepath = $NewPath + "/" +"DEV Non Production.csv"
+$oldfilepath = $OldPath + "/" +"DEV Non Production.csv"
 
 
 <#
