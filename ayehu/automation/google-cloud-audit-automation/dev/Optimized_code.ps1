@@ -319,7 +319,8 @@ else
 write-host "Reference file doesnt exist for comparison"
 
 }
-echo "hi"
-rm -rf /tmp/shan/ayehu/
-echo "bi"
+#gsutil cp test123.txt gs://test511
+
+#rm -rf /tmp/shan/ayehu/
+
 Stop-Transcript
