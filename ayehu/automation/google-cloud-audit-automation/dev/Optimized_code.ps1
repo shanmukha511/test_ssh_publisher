@@ -55,7 +55,7 @@ $Newfilepath = $NewPath + "\" +"DEV Non Production.csv"
 $oldfilepath = $OldPath + "\" +"DEV Non Production.csv"
 
 
-
+<#
 try
 {
 if(Get-ChildItem -path $Newfilepath)
@@ -67,6 +67,11 @@ catch
 {
 $_.Exception |out-null
 }
+#>
+
+gsutil cp gs://test511/DEV_Non_Production.csv $oldfilepath
+
+
 
 $transcriptpath  = $DesktopPath+"\Transcript_$(get-date -f yyyy_MM_dd_HH_mm__ss).txt"
 
