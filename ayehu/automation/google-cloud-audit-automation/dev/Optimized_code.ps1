@@ -305,7 +305,7 @@ $updatecsvpath = $updatepath + "\" + "DEV Non Production Updated.csv"
 
 
 #$path = $ENV:WORKSPACE + "\ayehu\automation\google-cloud-audit-automation\dev\DEV Non Production Updated.csv"
-$path = "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV Non Production.csv/DEV Non Production Updated.csv"
+$path = "/tmp/shan/ayehu/automation/google-cloud-audit-automation/dev/DEV Non Production Updated.csv"
 
 $results | Export-Csv -Path $path  -NoTypeInformation
 
