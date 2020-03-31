@@ -345,3 +345,4 @@ gsutil cp /root/ayehu/automation/google-cloud-audit-automation/dev/DEV_Non_Produ
 rm -rf /root/ayehu/
 
 Stop-Transcript
+
